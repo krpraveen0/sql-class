@@ -1,0 +1,281 @@
+SQL Boot camp
+-------------------------------
+Syllabus
+1. Database fundamental
+2. Database Design
+3. SQL basic
+4. Data Sorting
+5. Functions in SQL
+6. Important topics
+
+1. Database Fundamentals:
+---------------------------
+    1. Database 
+    2. SQL
+    3. MYSql.(workbench)
+2. Database Design
+----------------------
+    1. Database Design Intro
+    2. Normalization.
+    3. ER model
+
+3. SQL basic
+-----------------
+    1. Create statement.
+    2. Select statement.
+    3. WHERE Clause.
+    4. INSERT statement.
+    5. DELETE statement.
+    6. UPDATE statement.
+
+
+4. Data Sorting
+----------------
+    1. ORDER BY 
+    2. GROUP BY 
+    3. Wildcards in SQL.
+    4. Regular Expressions(REGEXP)
+
+5. Functions in SQL
+----------------------
+    1. MYSQL Functions(String,Numeric,User-Defined,Stored)
+    2. Aggregate Functions( SUM,AVG,MAX,MIN,COUNT,DISTINCT)
+6. Important topics
+    1. Joins
+    2. Union
+    3. Views
+    4. Indexe.
+
+What is Database ?
+A Database is a systematic collection of data.
+Example: phone directory, billing database.
+
+Types of Database:
+Most popular types of database are:
+    1. Distributed Database.
+    2. Relational Database.
+    3. Object-Oriented Database.
+    4. Centralized Database.
+    5. Open-source Database.
+    6. Cloud Database.
+    7. Data warehouses
+    8. NoSQL databases.
+    9. Graph Database.
+    10. OLTP database.
+    11. Personal database.
+    12. Multimodal database.
+    13. Document/Json databse.
+    14. Hierarchial 
+ 
+1. Distributed Database.
+------------------------------
+A distributed database is a type of database that has contributions from the common database 
+and information captured by local computers. 
+In this type of database system, the data is not in one place and is distributed at various organizations.
+
+2. Relational databases:
+-------------------------
+This type of database defines database relationships in the form of tables. 
+It is also called Relational DBMS, which is the most popular DBMS type in the market.
+Database example of the RDBMS system include MySQL, Oracle, and Microsoft SQL Server database.
+
+3. Object-oriented databases:
+---------------------------------
+This type of computers database supports the storage of all data types. 
+The data is stored in the form of objects. 
+The objects to be held in the database have attributes and methods that define what to do with the data. 
+PostgreSQL is an example of an object-oriented relational DBMS.
+
+4. Centralized database:
+---------------------------
+It is a centralized location, and users from different backgrounds can access this data. 
+This type of computers databases store application procedures that help users access the data even from a remote location.
+
+5. Open-source databases:
+--------------------------
+This kind of database stored information related to operations. 
+It is mainly used in the field of marketing, employee relations, customer service, of databases.
+
+6. Cloud databases:
+----------------------
+A cloud database is a database which is optimized or built for such a virtualized environment. 
+There are so many advantages of a cloud database, some of which can pay for storage capacity and bandwidth. 
+It also offers scalability on-demand, along with high availability.
+
+7. Data warehouses:
+----------------------
+Data Warehouse is to facilitate a single version of truth for a company for decision making and forecasting. 
+A Data warehouse is an information system that contains historical and commutative data from single or multiple sources. 
+Data Warehouse concept simplifies the reporting and analysis process of the organization.
+
+8. NoSQL databases:
+-------------------
+NoSQL database is used for large sets of distributed data. 
+There are a few big data performance problems that are effectively handled by relational databases. 
+This type of computers database is very efficient in analyzing large-size unstructured data.
+
+9. Graph databases:
+---------------------
+A graph-oriented database uses graph theory to store, map, and query relationships. 
+These kinds of computers databases are mostly used for analyzing interconnections. 
+For example, an organization can use a graph database to mine data about customers from social media.
+
+10. OLTP databases:
+---------------
+OLTP another database type which able to perform fast query processing and maintaining data integrity in multi-access environments.
+
+11. Personal database:
+-----------------------
+A personal database is used to store data stored on personal computers that are smaller and easily manageable. 
+The data is mostly used by the same department of the company and is accessed by a small group of people.
+
+12. Multimodal database:
+------------------------
+The multimodal database is a type of data processing platform that supports multiple data models that define how the certain knowledge and information in a database should be organized and arranged.
+
+13. Document/JSON database:
+-------------------------
+In a document-oriented database, the data is kept in document collections, usually using the XML, JSON, BSON formats. 
+One record can store as much data as you want, in any data type (or types) you prefer.
+
+14. Hierarchical:
+---------------
+This type of DBMS employs the "parent-child" relationship of storing data. 
+Its structure is like a tree with nodes representing records and branches representing fields. 
+The windows registry used in Windows XP is a hierarchical database example.
+
+15. Network DBMS:
+----------------
+This type of DBMS supports many-to-many relations. 
+It usually results in complex database structures. 
+RDM Server is an example of database management system that implements the network model.
+
+Components of Database:
+---------------------
+There are five main components of database:
+    1) Hardware
+    2) Software
+    3) Data 
+    4) procedure
+    5) Data access language. (SQL , NoSQL)
+
+1) Hardware
+-------------
+It provides the interface between computer and real world system.
+
+2.) Software:
+------------------
+These are group of programs used to control the complete database.
+This includes:
+    1) The database software itself.
+    2) Operating system.
+    3) Network software used to share data among the users and application programs for accessing data in the database.
+
+3.)Data
+----------------
+It is raw and unorganized facts that needs to be processed to make it meaningfull.
+Data comprises of facts, observations, perceptions, number, character,symbols, images etc.
+
+4.) Procedure:
+-----------------
+It contains the rules and regulations which helps us to use the DBMS.
+
+5.) Data access language:
+-----------------------------
+It helps to access the data to and from the databse.
+Special commands are written and submitted to the database known as query.
+Those query returns the data from the database or make some changes the data already present in the database.
+
+
+Database Management system
+--------------------------------
+IT is software(collection of programs) which enables us to access
+databases, manipulate data, report and represent data.
+It also helps to control access to databases.
+
+DBMS was implemented first time in the 1960s.
+Integrated Data Store(IDS) is the first DBMS by Charles Bachman's
+
+History of DBMS:
+-------------------
+1960 - first DBMS system.
+1970 - Codd introduced IBM's Information Management System(IMS)
+1976 - Entity-relationship model defined by Peter Chen.
+1980 - Relational model database component widely accepted .
+1985 - Object-oriented DBMS develops.
+1990 - Incorporation of object-oriented in relational DBMS.
+1991 - MS access by Microsoft (personal DBMS).
+1995 - First Internet Database application.
+1997 - XML is being used in database processing.
+
+advantages of DBMS:
+----------------------
+1. It offers a variety of techniques to store & retrieve data.
+2. It serves as an efficient handler to balance the needs of multiple applications using the same data.
+3. Uniform administration procedures for data.
+4. Application programmers never exposed to details of data representation and storage.
+5. A DBMS uses various powerful functions to store and retrieve data efficiently.
+6. Offers Data Integrity and Security.
+7. The DBMS implies integrity constraints to get a high level of protection against prohibited access to data.
+8. A DBMS schedules concurrent access to the data in such a manner that only one user can access the same data at a time.
+9. Reduced Application Development Time.
+
+Some of the disadvantages of DBMS:
+---------------------------------------
+1. Increases the budget of the organization .
+2. Training required to use DBMS.
+3. Database may corrupt which results in data loss.
+4. It can't perform sophisticated calculations.
+
+
+ SQL
+ -----------
+ It stands for structured query language.
+ It is used to perform different operations like insert,
+ search,update,delete etc on relational database.
+
+
+ formally,
+ SQL is a language to operate databases. 
+ It includes database creation, deletion, fetching rows, modifying rows, etc. 
+ SQL is an ANSI (American National Standards Institute) standard language. 
+ SQL standards are divided into several parts. i.e 
+
+                Part 1 - SQL/Framework	                It offers logical concepts.
+                Part 2 - SQL/Foundation	                It includes central elements of SQL.
+                Part 3 - SQL/CLI	                    This standard includes central elements of SQL.
+                Part 4 - Persistent Stored Modules	    Stored routines, external routines, and procedural language extensions to SQL.
+                Part 9 - Management of External Data	Adds syntax and definitions to SQL/Foundation, which allow SQL access to non-SQL data sources (files).
+                Part 10 - Object Language Bindings	    Object Language Bindings: This part specifies the syntax and semantics of embedding SQL in Java™.
+                Part 11 - SQL/Schema	                Information and Definition Schemas
+                Part 12 - SQL/Replication	            This project began in 2000. This part helps to define the syntax and semantics to allow the definition of replication schemes and rules.
+                Part 13 - Java Routines and Type	    Java Routines and Types: This part of routines using the Java Programming Language.
+                Part 14 - SQL/XML	                    SQL and XML
+                Part 15 - SQL/MDA	                    Provide SQL support for Multi-Dimensional Arrays
+
+ It is also used maintain the relational databases.
+ Example: Mysql, Oracle, MS SQL Server, PostgreSQL etc.
+
+ NOte : SQL syntaxes used in different RDBMS are almost similar, at the
+ same time few RDBMS uses a few different commands and even proprietary(ownership)
+ SQL syntaxes.
+
+ SQL is used 
+    to access data in the RDBMS.
+    to describe the data.
+    to define the data in a database and manipulate the specific data.
+    to create and drop database tables.
+    to use the functions in db, create a view and stored procedure.
+    to set permissions on tables, procedures and views.
+
+
+
+SQL process 
+Some of important components of SQL process are:
+    1. SQL Query Engine.
+    2. Optimization Engines.
+    3. Query Dispatcher.
+    4. Classic Query Engine.
+
+Note : A classic query engine allows us to manage all the 
+non-SQL queries.
