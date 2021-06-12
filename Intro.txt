@@ -279,3 +279,6 @@ Some of important components of SQL process are:
 
 Note : A classic query engine allows us to manage all the 
 non-SQL queries.
+
+Installation of PostgreSQL(pgadmin), Mysql(workbench),ibm db2, aws rdbms.
+
