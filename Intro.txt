@@ -282,3 +282,54 @@ non-SQL queries.
 
 Installation of PostgreSQL(pgadmin), Mysql(workbench),ibm db2, aws rdbms.
 
+Important elements of SQL language:
+------------------------------------------
+Keywords: specail words whose meaning is already defined by the sql engine.
+            Each statement in Sql contains one or more Keywords.
+
+Identifiers: any names of objects in database such as use, Ids, tables , columns etc .
+
+Strings : it can be literal strings or Expressions with VARCHAR or CHAR datatypes.
+
+Expressions: statement formed by using several elements like constants , SQL operators, column names and subqueries.
+
+Search Conditions: These are used to select a subset of the rows of a table or used to control the statement like
+                    an IF statement to determine the control of flow.
+
+Special Values: Those are used in Expressions and as column defaults when building tables.
+
+Variables : whose value can vary time to time (local Variables, global Variables) .
+
+Comments: it is used to attach explanatory text to SQL statements or blocks of statements. 
+            Actaully database server doesn't execute the comments.
+
+NULL values: Whenever value is unknown, missing or not applicable of a particular entity in sql then NULL is used.
+
+
+To work with SQL engine we need to give some command so that it can perfrom some operations on the data in the database.
+Those commands are known as SQL statements or Query.
+
+Basically there are five types of widely used SQL queries :
+
+1) Data Definition Language(DDL).
+2) Data Manipulation language(DML).
+3) Data Control language(DCL).
+4) Transaction Control language(TCL).
+5) Data Query Language (DQL).
+
+
+Some of the most comman SQL commands are:
+1. CREATE - defines the database structure or schema.
+2. INSERT - inserts data into rows of a table.
+3. UPDATE - updates data in database.
+4. DELETE - removes one or more rows from a table.
+5. SELECT - selects the attribute based on the Conditions described by the WHERE Clause.
+6. DROP - removes tables and databases.
+
+How SQl defines the database?
+SQl defines database as a collection of tables that store a detailes set of structured data.
+It is table that contains a collection of rows, referred as records or tuples.
+and columns are referred as attributes of that table.
+Now each column in a table is designated to store a specific type of information.
+for example : names, date, id, amount , salary etc.
+
