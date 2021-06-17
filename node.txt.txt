@@ -1,0 +1,7 @@
+Basic Authentication: Objectives and Outcomes
+In this lesson, you will learn the basics about user authentication. Thereafter you will use the basic authentication scheme supported in HTTP to enable users to submit authentication information and then validate the users on the server side. At the end of this lesson, you should have:
+
+Understood the basics of user authentication
+Used basic authentication support to authenticate users.
+
+
