@@ -467,6 +467,23 @@ composite key?
 Design a database for movies_rental excel table.
 Populate that with dummy values.
 
+What composite key?
+It is a primary key composed of multiple columns used to identify a record uniquely.
+
+Let us consider a database where two students having same name but living at different address.
+Hence we can use both name and address to identify each of the students(records) uniquely by the help of composite key.
+Here the name and address columns are being used to form a composite key.
+
+2NF(second normal form) Rules:
+------------------------------
+1) IT  is should obey all rules of first normal form. or It should be first normal form.
+2) single column Primary key that does not functionally dependent on any subset of candidate key relation.
+
+
+
+It is clear that we can't move forward to make our simple database in second normalization form unless we partition the table.
+
+
 
 
 
