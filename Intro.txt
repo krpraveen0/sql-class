@@ -478,10 +478,9 @@ Here the name and address columns are being used to form a composite key.
 ------------------------------
 1) IT  is should obey all rules of first normal form. or It should be first normal form.
 2) single column Primary key that does not functionally dependent on any subset of candidate key relation.
-
-
-
+NOte: every non-key attribute is fully dependent on primary key.
 It is clear that we can't move forward to make our simple database in second normalization form unless we partition the table.
+This two NF form  eliminates partial dependencies on primary key.
 
 
 

@@ -1,0 +1,46 @@
+2NF:
+--------
+It rectifies the parial dependency of a table.
+which means if a certian column values are going to partially depend on other column then it is known as partial
+dependency.
+
+
+What is Foreign Key:
+-----------------------
+The key which references the primary key of some other table is known as Foreign key.
+It helps to connect different tables.
+
+Important points of Foreign key:
+---------------------------------
+A foreign key can have different name from its primary key.
+In ensures that rows in one talble have corresponding rows in another table as well.
+Unlinke primary key, Foreign key do not have to be unique, mostly they aren't.
+
+Why do you need a foreign key?
+
+To achieve and maintain referential integrity.
+
+Transitive functional dependencies:
+----------------------------------------
+if a non-key column changed then it might be possible that due to it other non-key column changes its value.
+
+3NF(Third Normal Form)
+-------------------------
+The 3NF theory states that:
+
+    1. It should be in 2NF.
+    2. It should not have any transitive functional dependencies.
+
+We need to divide our table again so that we can move 2NF table to 3NF.
+Majorly for simple database we cannot decompose those higher than normalization form of 3NF.
+But for complex databases we can decompose further also in BCNF Normal Form.
+
+BCNF(Boyce-Codd Normal Form)
+---------------------------------
+
+
+Entity Diagram
+-------------------
+
+
+
