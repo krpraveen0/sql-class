@@ -1,0 +1,14 @@
+BCNF :
+--------------
+When our table is in 3NF and further some dpendency remains there then we should go for BCNF.
+It was proposed by two person's boyce & codde so the theory named as Boyce-Codd normal form.
+If our database is in 3NF, still there is some anomalies due to presence of more than one candidate key in the table.
+so in that case we need to use advance version of 3NF which is known as BCNF. Sometimes BCNF is also referred as 3.5NF.
+
+Important points on BCNF:
+----------------------------------
+It is advance version of 3NF, it is stricter than 3NF.
+A table which is in BCNF if every functional dpendency X -> Y, X is the super key of the table.
+For a table to be in BCNF it should be in 3NF,
+and for every functional dpendency, Left hand side should be the super key.
+
