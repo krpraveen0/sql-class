@@ -1,0 +1,66 @@
+For designing the EER model 
+1.) install mysql workbench.
+2.) create connection to the server(localhost).
+3.) create a new model.
+4.) double click on add diagram.
+
+It will take us to the EER diagram screen where we will get several options to design our databases.
+1.) To create tabel we need to click on table symbol or press 'T' .
+2.) There are several different relationship options between the tables so we need to choose the appropriate one 
+    according to our need.
+
+Let's start with design members table.
+-------------------------------------
+members entity(table) has following attributes:
+1.) Membership number.
+2.) Full names.
+3.) Gender.
+4.) Date of Birth.
+5.) Physical address.
+6.) Postal address.
+
+steps to create members table diagram:
+---------------------------------------
+1.) Drag the table object from the tools panel.
+2.) Drop it in the workspace area which shows an entity named table1.
+3.) Double click on it. which will popup the properties window for us.
+4.) Change the name table1 to Members.
+5.) Edit the default idtable1 to membership_number.
+6.) Click on the next line to add the next field.
+7.) Repeat the step6 to add all the remaining attributes identified in members entity
+
+now, we need to create MoviesRentals Table(entity):
+------------------------------------------------------
+MoviesRentals entity contains following attributes:
+1.) reference_number(INT).
+2.) transaction_date (Date).
+3.) membership_number(INT).
+4.) return_date (Date).
+
+now, we will create movies table:
+---------------------------------
+Movies entity contains following attributes:
+---------------------------------------
+1.) movie_id (INT)
+2.) title (VARCHAR)
+3.) director(VARCHAR)
+4.) year_released(VARCHAR)
+
+
+Now,lets head towards categories table.
+-----------------------------------------
+Categories entity contains following attributes:
+-----------------------------------------------
+1.) category_id (INT)
+2.) category_name(VARCHAR)
+3.) remarks (VARCHAR)
+
+last one is payments table (Entity):
+---------------------------------
+payments entity contains following attributes:
+--------------------------------------------------
+1.) payment_id(INT).
+2.) payment_date(Date).
+3.) description(VARCHAR).
+4.) amount_paid(FLOAT).
+5.) external_reference_number(INT).

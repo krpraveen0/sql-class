@@ -1,0 +1,113 @@
+What is ER Model?
+
+It stands for Entity relationship Model.
+It is graphical approach to design a database.
+It is a high level data model that defines the data elements and their relationship
+for a specified software system.
+An ER model is used to represent real-world objects.
+
+An Entity is a thing or object in real world that is distinguishable from surrounding environment.
+eg:
+each employee of an organization in a separate entity.
+some major characterstics of an entity is:
+1.) An entity has set of property.
+2.) Entity property can have some value.
+
+Let's see an example :
+An employee of an organization is an entity. 
+If "p" is a programmer(an employee) at Microsoft, so she can have some attributes(properties) like name, age, weight, height(keeps increasing) etc.
+Each attribute(property) can have values but it is possible to have multiple values for an attribute.
+
+suppose P's age has a single value.But her "phone number" property can have multiple values.
+
+Entities can have relationships with each other.
+Let's consider each Microsoft programmer is given a computer. NOw here it is clear p's computer is also an entity.
+P is using that computer, the same computer is used by p, so there is a mutual relationship between p and her computer.
+
+In ER modeling , we model Entities, their attributes and relationship among Entities.
+
+EER(Enhanced Entity Relationship) Model:
+----------------------------------------
+It is also a high level data model only which provides extensions to original Entity relationship model.
+EER model supports more detailed design.
+Actaully EER modeling has emerged as a solution for modeling highly complex databases.
+
+EER uses UML(unified modeling language). where UML is a general-purpose modeling language used 
+when we design object-oriented system.
+Here in UML 
+Entities are represented as Class diagrams.
+Relationships are representation as associations between Entities.
+
+
+Why we use ER Model?
+ER model address One of the challanges is the fact that designers, developers, and end-users tend to view data and its 
+usage differently. If this situation left unchecked,we can end up producing a database system that doesn't meet our
+requirements.
+ER model is communication tool which is understandable by all the stackholders which helps to keep our database design 
+same for different users.
+
+ER diagrams increases the user productivity as they can easily be translated into relational tables.
+
+Case STudy
+----------
+ER diagram of PyFlix(Video Library)
+
+Steps to develop EER diagram for PyFlix database:
+-------------------------------------------------
+
+1. Identify the Entities and determine  the relationship that exists among them.
+2. Each entity, attribute(property), and relationship, should have appropriate names that can 
+    be easily understandable by the non-technical people as well.
+3. Relationship should not be connected directly to each other. Relationships should connect entities.
+4. Each attribute in a given entity should have a unique name.
+
+
+Identifying the entities in PyFlix database.
+------------------------------------------
+
+1. Members- this entity will hold member information.
+2. Movies - this entity will hold information about movies.
+3. Categories - this entity will hold information that places movies into different Categories ie "Drama" , "Action" and "Epic" etc.
+4. Movie Rentals - this entity will hold information about the movies rented out to the members.
+5. Payments - this entity will hold information about the Payments made by the members.
+
+
+Defining the relationship among entities:
+-----------------------------------------
+a. members and movies:
+---------------------------
+The following holds true regarding the interactions between the two entities:
+ 1. A member can rent more than one movie in a given period of time.
+ 2. A movie can be rented by more than one member in a given period of time.
+
+From above conditions we can see that the nature of the relationship is many-to-many.
+
+Note : Relational databases doesn't support many-to-many relationship. so we need to introduce a junction entity.
+Here for our PyFlix we have MovieRentals entity which plays the role of junction entity.
+
+What the junction entity does?
+It creates one-to-many relationship with both the entities which holds many-to-many relationship.
+
+In our PyFlix
+MovieRentals has one-to-many relationship with the members and
+another one-to-many relationship with movies entities.
+
+
+b. movies and categories entities:
+---------------------------------------
+The following holds true about the movies and categories.
+
+    A movie can only belong to one category but a category can have more than one movie.
+
+From above statement we can deduce that the nature of the relation between categories and movies entity(table) 
+is one-to-many.
+
+c. members and payments entities:
+----------------------------------------
+
+The following holds true about members and payments:
+
+    A member can only have one account but can make a number of payments.
+
+From above we can conclude that the nature of the relation between members and payments entities is one-to-many.
+
