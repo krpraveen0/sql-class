@@ -1,0 +1,97 @@
+Steps to create Database in Mysql:
+--------------------------------------
+We can create Database in two ways:
+1.) By executing a simple query.
+2.) By using forward engineering in Mysql Workbench.
+
+
+1.) By executing a simple query.
+-----------------------------------
+Lets assume that we need to create a Database with the name movies.
+We can do that by executing the below query:
+
+CREATE DATABASE movies;
+or 
+CREATE SCHEMA movies;
+
+optimizing our Database creation query:
+
+CREATE DATABASE IF NOT EXISTS movies;
+
+Note:
+A single Mysql server can have multiple Databases.
+Here IF NOT EXISTS let's us instruct the MySQL server to check the existence 
+of a Database with a similar name prior to creating a Database.
+
+When IF NOT EXISTS is used then Database is created only if given name doesn't 
+conflict with an existing Database's name.
+if we try to create a Database with already available name then Mysql server will throw error.
+eg:
+mysql> CREATE DATABASE movies;
+ERROR 1007 (HY000): Can't create database 'movies'; database exists
+
+Collation :
+---------------
+Collation is  a set of rules used in comparison.
+In mysql data is stored by using specific character set.
+so here character set can be defined at different levels like server,database, table and column.
+
+We need to select the rules of collation which in turn depend on the character set chosen.
+
+for eg:
+The Latin1 character set uses the latin1_swedish_ci collation which is the Swedish case insensitive order.
+
+CREATE DATABASE IF NOT EXISTS movies CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+The best practice while using local language like english, arabic, chinese etc is to select Unicode (utf-8)
+character set which has flexibility of several collations or just stick to default collation utf8-general-ci.
+
+We can see the list of existing databases by following command:
+> SHOW DATABASES;
+
+Creation of TAbles in Mysql:
+-------------------------------
+Below command/statment can be used to create tables in MySQL:
+CREATE TABLE <table_name>;
+
+or 
+CREATE TABLE [IF NOT EXISTS] `TableName' (`fieldname` dataType  [optional parameters]) ENGINE = storage Engine;
+
+In the above statement:
+"CREATE TABLE" -> it is the one which is responsible for creation of table in the database.
+"[IF NOT EXISTS]" --> It is optional and it only creates the table if no matching table is found.
+"`fieldName`" --> It is the name of the fields (coulmn).
+"data Type" --> it defines the nature of the data to be stored in the field .
+
+"[Optional parameters]" --> addtional information about a field such as "AUTO_INCREMENT"
+Lets create a table:
+
+CREATE TABLE IF NOT EXISTS `PyFlixDB`.`Members` (`membership_number` INT AUTO_INCREMENT,
+ `full_names` VARCHAR(150) NOT NULL, 
+`gender` VARCHAR(6), 
+`date_of_birth` DATE,
+ `physical_address` VARCHAR(255),
+  `postal_address` VARCHAR(255),
+`contact_number` VARCHAR(50),
+ `email` VARCHAR(255),
+  PRIMARY KEY(`membership_number`))  ENGINE = InnoDB;
+
+
+
+  2.) By using forward engineering in Mysql Workbench:
+  ----------------------------------------------------------
+  Mysql Workbench provides a facility called forward engineering .
+  forward engineering is a technical term to describe the process of translating a logical model
+  into a physical implementation automatically.
+
+  We already have EER diagram for PyFlix Database, so now we are going to use that EER model to generate
+  SQL scripts that will create our database.
+
+  steps:
+  1. Open the EER model of PyFlix database that we have created earlier.
+  2. Click on database menu 
+  3. select forward engineering.
+  4. IN the next window, allows us to connect to an instance of MYsql server. Click
+    on the stored connection drop down list and select localhost . Click execute.
+
+  5.
